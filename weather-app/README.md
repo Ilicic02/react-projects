@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Weather App je jednostavna React aplikacija koja omogućava korisnicima da pretražuju trenutne vremenske uslove i sedmodnevnu vremensku prognozu za bilo koji grad. Aplikacija koristi GeoDB Cities API za pretragu gradova i OpenWeather API za preuzimanje vremenskih podataka.
 
-## Available Scripts
+![Screenshot](assets/screenshot.png)
 
-In the project directory, you can run:
+## Sadržaj
 
-### `npm start`
+- [Instalacija](#instalacija)
+- [Korišćenje](#korišćenje)
+- [Tehnologije](#tehnologije)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Instalacija
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Klonirajte repozitorijum
+    ```bash
+    git clone https://github.com/tvoj-korisnicki-username/weather-app.git
+    ```
 
-### `npm test`
+2. Instalirajte dependencije
+    ```bash
+    npm install
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Postavite svoj OpenWeather API ključ u `api.js` fajl. Otvorite `src/api.js` i unesite svoj API ključ:
+    ```javascript
+    export const WEATHER_API_KEY = 'VAŠ_API_KLJUČ';
+    export const WEATHER_API_URL = 'https://api.openweathermap.org/data/2.5';
+    ```
 
-### `npm run build`
+4. Pokrenite aplikaciju
+    ```bash
+    npm start
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Korišćenje
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Unesite naziv grada u polje za pretragu da biste dobili trenutne vremenske uslove i sedmodnevnu prognozu.
+- Aplikacija prikazuje informacije kao što su trenutna temperatura, osećaj temperature, brzina vetra, vlažnost, pritisak i još mnogo toga.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tehnologije
 
-### `npm run eject`
+- **React** - JavaScript biblioteka za izgradnju korisničkih interfejsa.
+- **react-accessible-accordion** - Komponenta koja omogućava kreiranje pristupačnih akordeon menija.
+- **GeoDB Cities API** - API koji pruža podatke o gradovima za pretragu.
+- **OpenWeather API** - API za preuzimanje trenutnih vremenskih uslova i prognoze.
+- **CSS** - Kaskadni stilovi za stilizaciju korisničkog interfejsa.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
