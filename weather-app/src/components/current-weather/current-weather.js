@@ -1,9 +1,6 @@
 import "./current-weather.css";
 
 const CurrentWeather = ({data}) => {
-    if (!data || !data.weather || !data.main || !data.wind) {
-        return null;
-    }
     return (
         <div className="weather">
             <div className="top">
