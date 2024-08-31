@@ -2,6 +2,8 @@
 
 A simple To-Do List application built with React.
 
+![Screenshot](public/assets/screenshot.png)
+
 ## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
