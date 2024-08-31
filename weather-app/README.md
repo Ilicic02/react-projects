@@ -2,7 +2,7 @@
 
 Weather App je jednostavna React aplikacija koja omogućava korisnicima da pretražuju trenutne vremenske uslove i sedmodnevnu vremensku prognozu za bilo koji grad. Aplikacija koristi GeoDB Cities API za pretragu gradova i OpenWeather API za preuzimanje vremenskih podataka.
 
-![Screenshot](assets/screenshot.png)
+![Screenshot](public/assets/screenshot.png)
 
 ## Sadržaj
 
